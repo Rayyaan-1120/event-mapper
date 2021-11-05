@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Mapper</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="sec1">
+        <div class="wholewrapper">
+          <div class="logobox">
+            <div class="logo">
+              <img src="images/map.png" alt="" />
+              <h1>Event Mapper</h1>
+            </div>
+            <div class="toggicondiv">
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+          </div>
+
+          <div class="formdiv hidden">
+              <form action="">
+                  <div class="input">
+                      <select class="dropdown">
+                          <option value="person1" class="person">1 person</option>
+                          <option value="person2" class="person">2 person</option>
+                          <option value="person3" class="person">3 person</option>
+                          <option value="person4" class="person">4 person</option>
+                          <option value="person5" class="person">5 person</option>
+                      </select>
+                  </div>
+                  <div class="input">
+                      <input type="date" class="inputdate">
+                  </div>
+                  <div class="input">
+                    <input type="time" class="inputtime">
+                </div>
+                <div class="input">
+                    <input type="number" class="inputcost" placeholder="cost">
+                </div>
+
+                <div class="input">
+                    <input type="text" class="inputeventname">
+                </div>
+                <div class="input">
+                  <input type="submit" value="submit" class="inputsub">
+              </div>
+              </form>
+          </div>
+
+           <div class="deletebtnall hidden">
+             <button class="delall">Delete all</button>
+           </div>
+
+           <div class="mainwrapper">
+          <div class="iddiv">
+          <!-- <div class="resultdiv">
+              <h1>eventname</h1>
+
+              <div class="icon-wrapper">
+              <div class="timeshowdiv">
+                <i class="far fa-clock"></i>
+                 <h2>time</h2>
+              </div>
+              <div class="costshowdiv">
+                <i class="far fa-money-bill-alt"></i>
+                 <h2>cost</h2>
+              </div>
+              <div class="dayshowdiv">
+                <i class="far fa-calender-minus"></i>
+                 <h2>day</h2>
+              </div>
+              <div class="memshowdiv">
+                <i class="far fa-user-friends"></i>
+                 <h2>mem</h2>
+              </div>
+            </div>
+
+            <div class="delete">
+              <button class="del">delete</button>
+            </div>
+            
+          </div> -->
+        </div>
+      </div>
+        </div>
+      </section>
+      <section class="sec2" id="map"></section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
